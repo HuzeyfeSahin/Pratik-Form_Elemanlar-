@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pratik-Form_Elemanları</title>
+</head>
+<body>
+    <h1>HTML Form Elemanları</h1>
+
+    <form>
+        <fieldset>
+            <legend>Kullanıcı Bilgileri:</legend>
+            <div>
+                <label for="name">Ad:</label>
+                <input type="text" name="name" id="name">
+                <label for="surname">Soyad:</label>
+                <input type="text" name="surname" id="surname">
+            </div>
+            <div>
+                <label for="gender">Cinsiyet:</label>
+                <input type="radio" name="gender" id="male">Erkek
+                <input type="radio" name="gender" id="female">Kadın
+            </div>
+            <div>
+                <label for="email">E-posta:</label>
+                <input type="email" name="email" id="email">
+            </div>
+            <div>
+                <label for="password">Şifre:</label>
+                <input type="password" name="password" id="password">
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Favori Meyve Seçimi:</legend>
+            <div>
+                <label for="fruit">Meyve:</label>
+                <select name="fruit" id="fruit">
+                    <option value="Seçiniz.."></option>
+                    <optgroup label="Yaz Meyveleri">
+                        <option value="Karpuz">Karpuz</option>
+                        <option value="Çilek">Çilek</option>
+                        <option value="Kavun">Kavun</option>
+                        <option value="Şeftali">Şeftali</option>
+                        <option value="Üzüm">Üzüm</option>
+                    </optgroup>
+                    <optgroup label="Kış Meyveleri">
+                        <option value="Portakal">Portakal</option>
+                        <option value="Mandalina">Mandalina</option>
+                        <option value="Elma">Elma</option>
+                        <option value="Ayva">Ayva</option>
+                        <option value="Armut">Armut</option>
+                    </optgroup>
+                </select>
+            </div>
+            <div>
+                <label for="text">Görüşleriniz:</label>
+                <textarea name="text" id="text" rows="5" cols="40"></textarea>
+            </div>
+        </fieldset>
+        <div>
+            <button type="submit">Gönder</button>
+            <button type="reset">Temizle</button>
+        </div>
+    </form>
+</body>
+</html>
